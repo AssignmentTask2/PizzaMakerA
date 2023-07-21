@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pizza Order Form</h1>
+        <!--Dynamic Retrieve of Student ID and Name-->
+        <p id="studentInfo"></p>
+        <!--Form for ordering pizza-->
+        <form id="pizzaForm">
+            <label for="size">Size:</label>
+            <select id="size" name="size" required>
+                <option value="" disabled selected>Select size</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+
+            <label for="crust">Crust:</label>
+            <select id="crust" name="crust">
+                <option value="thin">Thin</option>
+                <option value="thick">Thick</option>
+                <option value="stuffed">Stuffed</option>
+            </select>
+
+            <label for="sauce">Sauce:</label>
+            <select id="sauce" name="sauce">
+                <option value="tomato">Tomato</option>
+                <option value="bbq">BBQ</option>
+                <option value="garlic">Garlic Butter</option>
+                <option value="alfredo">Alfredo</option>
+                <option value="pesto">Pesto</option>
+            </select>
+
+            <label for="cheese">Cheese:</label>
+            <input type="checkbox" name="cheese" value="mozzarella">Mozzarella
+            <input type="checkbox" name="cheese" value="cheddar">Cheddar
+            <input type="checkbox" name="cheese" value="parmesan">Parmesan
+            <input type="checkbox" name="cheese" value="goat">Goat Cheese
+
+            <label for="toppings">Toppings:</label>
+            <input type="checkbox" name="toppings" value="pepperoni">Pepperoni
+            <input type="checkbox" name="toppings" value="mushrooms">Mushrooms
+            <input type="checkbox" name="toppings" value="olives">Olives
+            <input type="checkbox" name="toppings" value="artichokes">Artichokes
+            <input type="checkbox" name="toppings" value="avocado">Avocado
+            <input type="checkbox" name="toppings" value="pineapple">Pineapple
+
+            <label for="notes">Additional Notes:</label>
+            <textarea id="notes" name="notes" rows="4" cols="50" placeholder="Any special instructions?"></textarea>
+            <!--Button to validate and submit-->
+            <button type="button" id="orderButton">Order</button>
+        </form>
+
+        <div id="orderSummary"></div>
+        <div id="pizzaDescription"></div>
+    </div>
+
+    <!-- JavaScript file linked with defer attribute -->
+    <script defer src="script.js"></script>
+</body>
+</html>
+
+
